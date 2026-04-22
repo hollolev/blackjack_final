@@ -1,0 +1,81 @@
+body {
+  background-color: rgb(6, 66, 6);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.container {
+  display: grid;
+}
+.dealer-cards,
+.player-cards {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 40px;
+  justify-content: center;
+}
+.card-dealer,
+.card-player {
+  background-color: white;
+  width: 130px;
+  height: 200px;
+  border-radius: 20px;
+  border: solid 2px black;
+  margin: 5px;
+  box-shadow: 2px 2px 10px black;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  color: white;
+}
+h3 {
+  color: white;
+  margin-left: 30px;
+}
+.hit {
+  background-color: aliceblue;
+  width: 150px;
+  height: 70px;
+  font-size: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: solid 1px gray;
+  position: absolute;
+  top: 500px;
+  left: 420px;
+  transition: 0.2s;
+}
+.stand {
+  background-color: aliceblue;
+  width: 150px;
+  height: 70px;
+  font-size: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: solid 1px gray;
+  position: absolute;
+  top: 500px;
+  right: 420px;
+  transition: 0.2s;
+}
+.hit:hover,
+.stand:hover {
+  background-color: lightblue;
+  transition: 0.2;
+}
+.playernumber,
+.number {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 20px;
+}
+.newgame {
+  padding: 5px;
+  width: 100px;
+  height: 35px;
+  background-color: red;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0;
+  color: white;
+}

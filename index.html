@@ -1,0 +1,55 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="jatek.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="kep/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="kep/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="kep/favicon-16x16.png">
+    <link rel="manifest" href="kep/site.webmanifest">
+</head>
+
+<body>
+    <button class="newgame" id="btnRefresh">Új játék</button>
+    <div class="container">
+        <h2>Osztó</h2>
+        <div class="dealer-cards" id="dealer_cards">
+            <div class="card-dealer" id="cardplayer1id">
+                <p class="number" id="kartya1"></p>
+            </div>
+
+            <div class="card-dealer" style="background-color: darkgray;" id="cardplayer2id">
+                <p class="number" id="kartya2"></p>
+            </div>
+        </div>
+
+        <h2>Játékos</h2>
+        <div id="player_cards" class="player-cards">
+
+            <div class="card-player">
+                <p class="playernumber" id="p_num1"></p>
+            </div>
+
+            <div class="card-player">
+                <p class="playernumber" id="p_num2"></p>
+            </div>
+        </div>
+
+        <button class="hit" onclick="hit()">Ütés</button>
+
+        <button class="stand" onclick="stand()">Tart</button>
+
+        <p id="osztolapok"></p>
+        <p id="jatekoslapok"></p>
+    </div>
+
+    <script src="jatek.js"></script>
+
+</body>
+
+</html>
